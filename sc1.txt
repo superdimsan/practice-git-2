@@ -1,0 +1,8 @@
+#!/bin/bash
+apt-get update
+apt-get install -gy python-setuptools build-essential python-dev
+easy_install flask psutil
+wget
+https://raw.githubusercontent.com/superdimsan/practice-git-2/master/app.txt -O app.py
+FLASK_APP=app.py flask run --host=0.0.0.0 --port=80
+
